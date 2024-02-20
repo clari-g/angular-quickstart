@@ -1,0 +1,19 @@
+<nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top" data-bs-theme="dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" [routerLink]="['/']">
+      <img src="../../assets/lizardwizard.jpg" alt="Logo" width="32" height="30" class="align-text-bottom">
+      LizardWizard
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-link" [ngClass]="{'active': activeUrl == '/pixelart'}" [routerLink]="['/pixelart']">Pixelart</a>
+        <a class="nav-link" [ngClass]="{'active': activeUrl == '/3d-models'}" [routerLink]="['/3d-models']">3D Models</a>
+        <a class="nav-link" [ngClass]="{'active': activeUrl == '/about'}" [routerLink]="['/about']">About</a>
+        <a class="nav-link" href="https://lizardwizard462.redbubble.com" target="_blank"><i class="fa-solid fa-basket-shopping"></i> Store</a>
+      </div>
+    </div>
+  </div>
+</nav>

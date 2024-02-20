@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+$main-family: 'Varela Round', sans-serif;
+$color-bg: var(--bs-gray-300);
+
+:root {
+  --bs-body-font-family: $main-family
+}
+
+html {
+    font-family: $main-family;
+    min-height: 100%;
+}
+
+body{
+  margin: 0;
+}
+
+.content {
+  min-height: calc(100vh - 75px - 24px);
+  margin-top: 59px;
+  background-color: $color-bg;
+}
+
+.header{
+  text-align: center;
+}

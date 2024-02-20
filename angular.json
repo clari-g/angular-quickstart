@@ -35,8 +35,7 @@
               }
             ],
             "styles": [
-              "src/styles.css",
-              "src/demo-styling.scss"
+              "src/styles.scss"
             ],
             "scripts": []
           },
