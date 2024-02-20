@@ -1,0 +1,48 @@
+.img-banner {
+  position: relative;
+}
+
+.img-overlay {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 20px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  transition: .5s ease;
+  opacity: 0;
+}
+
+.img-banner:hover .img-overlay {
+  opacity: 1;
+}
+
+.store-logo {
+  padding: 15px !important;
+  background-color: white;
+  display: flex;
+
+  a {
+    width: 100%;
+    height: 100%;
+    min-height: 50px;
+    background: center / contain no-repeat url('../../assets/rb_logo.svg');
+  }
+}
+
+.products img {
+  max-width: 25%;
+}
+
+@media (max-width: 576px) {
+  .img-overlay {
+    padding: 7px 0;
+    opacity: 1;
+    background: none;
+    text-shadow: 3px 3px 20px #000, -2px 1px 15px #000;
+  }
+}

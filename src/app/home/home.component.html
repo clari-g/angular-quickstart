@@ -1,8 +1,37 @@
 <div class="content">
-  <div class="header">
-    <h1>Lizard Webzard</h1>
-    <h2>
-      Home
-    </h2>
+  <div class="title-bar d-flex align-items-center justify-content-center">
+    <h1 class="display-5">The Lizard <i>Web</i>zard</h1>
+  </div>
+  <div class="row">
+    <div class="col-md-6 col-sm-12">
+      <div class="img-banner">
+        <a [routerLink]="['/pixelart']">
+          <img src="../../assets/pixel_banner.png" class="card-img-top" alt="pixelart banner">
+          <div class="img-overlay">
+            <h1 class="display-1">Pixelart</h1>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-md-6 col-sm-12">
+      <div class="img-banner">
+        <a [routerLink]="['/3d-models']">
+          <img src="../../assets/model_banner.png" class="card-img-top" alt="3d models banner">
+          <div class="img-overlay">
+            <h1 class="display-1">3D Models</h1>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <div class="col-md-6 col-sm-12 store-logo">
+      <a href="https://lizardwizard462.redbubble.com" target="_blank"></a>
+    </div>
+    <div class="col-md-6 col-sm-12 products">
+      <a href="https://www.redbubble.com/i/mug/Ghost-Band-Papas-Pixelart-by-LizardWizard462/144069836.9Q0AD?asc=u" target="_blank"><img src="../../assets/product_1.jpg" class="" alt="sample product mug"></a>
+      <a href="https://www.redbubble.com/i/iphone-case/Clown-Cat-by-LizardWizard462/144000987.B3ZQH?asc=u" target="_blank"><img src="../../assets/product_2.jpg" class="" alt="sample product phone case"></a>
+      <a href="https://www.redbubble.com/i/coasters/Nighttime-Fungi-Pixelart-by-LizardWizard462/144071223.E5I3N?asc=u" target="_blank"><img src="../../assets/product_3.jpg" class="" alt="sample product coasters"></a>
+      <a href="https://www.redbubble.com/i/mouse-pad/Lovebird-Pixelart-by-LizardWizard462/147713471.G1FH6?asc=u" target="_blank"><img src="../../assets/product_4.jpg" class="" alt="sample product mousepad"></a>
+    </div>
   </div>
 </div>

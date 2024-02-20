@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top" data-bs-theme="dark">
   <div class="container-fluid">
-    <a class="navbar-brand" [routerLink]="['/']">
+    <a class="navbar-brand" [routerLink]="['/']" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" >
       <img src="../../assets/lizardwizard.jpg" alt="Logo" width="32" height="30" class="align-text-bottom">
       LizardWizard
     </a>
@@ -9,9 +9,9 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav">
-        <a class="nav-link" [ngClass]="{'active': activeUrl == '/pixelart'}" [routerLink]="['/pixelart']">Pixelart</a>
-        <a class="nav-link" [ngClass]="{'active': activeUrl == '/3d-models'}" [routerLink]="['/3d-models']">3D Models</a>
-        <a class="nav-link" [ngClass]="{'active': activeUrl == '/about'}" [routerLink]="['/about']">About</a>
+        <a class="nav-link" [ngClass]="{'active': activeUrl == '/pixelart'}" [routerLink]="['/pixelart']" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Pixelart</a>
+        <a class="nav-link" [ngClass]="{'active': activeUrl == '/3d-models'}" [routerLink]="['/3d-models']" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">3D Models</a>
+        <a class="nav-link" [ngClass]="{'active': activeUrl == '/about'}" [routerLink]="['/about']" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">About</a>
         <a class="nav-link" href="https://lizardwizard462.redbubble.com" target="_blank"><i class="fa-solid fa-basket-shopping"></i> Store</a>
       </div>
     </div>
