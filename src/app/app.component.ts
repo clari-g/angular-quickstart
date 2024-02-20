@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['../styles.scss']
 })
 export class AppComponent {
-  title = 'angular-quickstart';
+  title = 'lizard-webzard';
 }
