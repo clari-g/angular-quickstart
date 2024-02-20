@@ -2,7 +2,17 @@
   <div class="title-bar d-flex align-items-center justify-content-center">
     <h1 class="display-5">Pixelart</h1>
   </div>
-  <p>
-    pixelart works!
-  </p>
+  <div class="page">
+    <div class="d-block d-sm-none text-center">
+      <h4 class="mb-2">Touch to zoom in/out</h4>
+    </div>
+    <div class="row">
+      <div class="spinner" [hidden]="viewImage">
+        <i class="fa-solid fa-spinner fa-spin"></i>
+      </div>
+      <div class="col-md-2 col-4" *ngFor="let url of gallery; index as i" [ngClass]="{'col-12' : zoom}" id="{{i}}">
+        <img src="{{url}}" class="pixel-img" alt="pixelart illustration" (click)="toggleView(''+i)" (load)="loaded()" [hidden]="!viewImage">
+      </div>
+    </div>
+  </div>
 </div>

@@ -1,0 +1,13 @@
+.avatar img {
+  border-radius: 5px;
+  background-color: #f8f8f8;
+  box-shadow: 3px 3px 6px gray;
+}
+
+@media (max-width: 576px) {
+  .avatar {
+    display: flex;
+    justify-content: center;
+    height: 90%;
+  }
+}

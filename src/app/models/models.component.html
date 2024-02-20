@@ -2,7 +2,14 @@
   <div class="title-bar d-flex align-items-center justify-content-center">
     <h1 class="display-5">3D Models</h1>
   </div>
-  <p>
-    models works!
-  </p>
+  <div class="page">
+    <div class="row justify-content-center">
+      <div class="spinner" [hidden]="viewModels">
+        <i class="fa-solid fa-spinner fa-spin"></i>
+      </div>
+      <div class="col-md-4 col-12" *ngFor="let model of models">
+        <div class="sketchfab-embed-wrapper"> <iframe (load)="loaded()" [hidden]="!viewModels" title="model.title" frameborder="0" allow="fullscreen" mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share [src]="model.url"> </iframe></div>
+      </div>
+    </div>
+  </div>
 </div>
