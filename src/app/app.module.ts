@@ -9,6 +9,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { PixelartComponent } from './pixelart/pixelart.component';
 import { ModelsComponent } from './models/models.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [						
@@ -22,7 +23,8 @@ import { ModelsComponent } from './models/models.component';
    ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

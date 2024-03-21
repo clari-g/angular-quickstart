@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ImagesService } from '../services/images.service';
+import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-about',
@@ -7,9 +9,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AboutComponent implements OnInit {
 
-  constructor() { }
+  constructor(private imagesService: ImagesService) { }
 
   ngOnInit() {
+    this.getAlbum();
+  }
+
+  getAlbum(): void {
+    this.imagesService.getAlbumImgs(environment.imgurAlbumHash)
+      .subscribe(response => {
+        console.log(response);
+      });
   }
 
 }
