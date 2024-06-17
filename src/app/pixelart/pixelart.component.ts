@@ -11,6 +11,7 @@ export class PixelartComponent implements OnInit {
     'https://i.imgur.com/BljNWYJ.png',
     'https://i.imgur.com/ntZlBEX.png',
     'https://i.imgur.com/4y63Eyo.png',
+    'https://imgur.com/V1upy6c.gif',
     'https://i.imgur.com/PqgJJJM.gif',
     'https://i.imgur.com/he6IISb.png',
     'https://i.imgur.com/U9ILEbb.png',
