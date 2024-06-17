@@ -3,7 +3,9 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  imgurClientId: 'a47c547792df5bc',
+  imgurAlbumHash: 'bbu935B'
 };
 
 /*
