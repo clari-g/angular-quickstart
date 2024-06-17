@@ -8,7 +8,9 @@ import { Component, OnInit } from '@angular/core';
 export class PixelartComponent implements OnInit {
 
   public gallery = [
-    'https://i.imgur.com/EFWuske.png',
+    'https://i.imgur.com/BljNWYJ.png',
+    'https://i.imgur.com/ntZlBEX.png',
+    'https://i.imgur.com/4y63Eyo.png',
     'https://i.imgur.com/PqgJJJM.gif',
     'https://i.imgur.com/he6IISb.png',
     'https://i.imgur.com/U9ILEbb.png',
